@@ -86,5 +86,15 @@ public class Examen {
         System.out.println();
 
     }
+    //9
+    public int reuturIndOcurr(int [] numeros, int numOccurr){
+
+        for (int i = 0; i < numeros.length; i++){
+            if (numeros[i] == numOccurr){
+                return i;
+            }
+        }
+        return -1;
+    }
 
 }

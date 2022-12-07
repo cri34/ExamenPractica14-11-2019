@@ -10,5 +10,6 @@ public class ExamenTest {
         System.out.println(e.checkOrdenAsc(numeros));
         System.out.println(e.checkOrdenDes(numeros));
         e.printArray(e.returnInversArray(numeros));
+        System.out.println(e.reuturIndOcurr(numeros,5));
     }
 }
