@@ -1,8 +1,6 @@
 public class Examen {
-
-    int [] numeros = {5 , 6 , 3 , 5 , 3 , 8 , 1 , 5};
     //ex1
-    public int mitjaAritmetica(){
+    public int mitjaAritmetica(int [] numeros){
         int mitja=0;
         for (int i = 0; i < numeros.length; i++){
             mitja+= numeros[i];
@@ -11,7 +9,7 @@ public class Examen {
         return mitja;
     }
     //ex2
-     public int minValue(){
+     public int minValue(int [] numeros){
         int min= numeros[0];
         for (int i =0; i < numeros.length; i++){
             if (numeros[i]< min){
@@ -22,7 +20,7 @@ public class Examen {
      }
 
      //ex3
-    public int returnIndMinValue(){
+    public int returnIndMinValue(int [] numeros){
         int indMin=0;
         for (int i =0; i < numeros.length; i++){
             if (numeros[i]< numeros[indMin]){
@@ -30,6 +28,17 @@ public class Examen {
             }
         }
         return indMin;
+    }
+
+    public int maxValue(int [] numeros){
+        int max = numeros[0];
+
+        for (int i=0; i < numeros.length;i++){
+            if (numeros[i]> max){
+                max = numeros[i];
+            }
+        }
+        return max;
     }
 
 
