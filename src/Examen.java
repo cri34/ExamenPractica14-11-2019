@@ -29,7 +29,7 @@ public class Examen {
         }
         return indMin;
     }
-
+    //4
     public int maxValue(int [] numeros){
         int max = numeros[0];
 
@@ -40,6 +40,7 @@ public class Examen {
         }
         return max;
     }
+    //5
     public int returnIndMaxValue(int [] numeros){
         int indMax=0;
         for (int i = 0; i < numeros.length;i++ ){
@@ -49,8 +50,15 @@ public class Examen {
         }
     return indMax;
     }
-
-
+    //6
+    public  boolean checkOrdenAsc( int [] numeros){
+        for (int i = 0; i < numeros.length -1 ; i++){
+            if (numeros[i] > numeros[i+1]){
+                return false;
+            }
+        }
+    return true;
+    }
 
 
 }
