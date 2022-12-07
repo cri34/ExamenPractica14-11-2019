@@ -10,6 +10,16 @@ public class Examen {
         mitja= mitja/numeros.length;
         return mitja;
     }
+    //ex2
+     public int minValue(){
+        int min= numeros[0];
+        for (int i =0; i < numeros.length; i++){
+            if (numeros[i]< min){
+                min = numeros[i];
+            }
+        }
+        return  min;
+     }
 
 
 

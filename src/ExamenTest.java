@@ -1,6 +1,7 @@
 public class ExamenTest {
     public static void main(String[] args) {
         Examen e = new Examen();
-        System.out.print(e.mitjaAritmetica());
+        System.out.println(e.mitjaAritmetica());
+        System.out.println(e.minValue());
     }
 }
