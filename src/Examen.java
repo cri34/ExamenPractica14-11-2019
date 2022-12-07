@@ -21,6 +21,17 @@ public class Examen {
         return  min;
      }
 
+     //ex3
+    public int returnIndMinValue(){
+        int indMin=0;
+        for (int i =0; i < numeros.length; i++){
+            if (numeros[i]< numeros[indMin]){
+               indMin = i;
+            }
+        }
+        return indMin;
+    }
+
 
 
 
