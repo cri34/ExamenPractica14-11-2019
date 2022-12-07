@@ -40,6 +40,15 @@ public class Examen {
         }
         return max;
     }
+    public int returnIndMaxValue(int [] numeros){
+        int indMax=0;
+        for (int i = 0; i < numeros.length;i++ ){
+            if (numeros[i] > numeros[indMax]){
+                indMax = i;
+            }
+        }
+    return indMax;
+    }
 
 
 
