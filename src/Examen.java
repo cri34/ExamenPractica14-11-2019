@@ -46,7 +46,7 @@ public class Examen {
     //5
     public int returnIndMaxValue(int[] numeros, int indFinal) {
         int indMax = 0;
-        for (int i = 0; i < indFinal; i++) {
+        for (int i = 0; i <= indFinal; i++) {
             if (numeros[i] > numeros[indMax]) {
                 indMax = i;
             }
@@ -135,5 +135,18 @@ public class Examen {
         intercambi[ind] = intercambi[indMax];
         intercambi[indMax] = temp;
         return intercambi;
+    }
+
+    //12
+    public int[] ordenarArray(int[] numeros) {
+        int[] numOrd = new int[numeros.length];
+        for (int i = 0; i < numeros.length; i++)
+            numOrd[i] = numeros[i];
+        while (!checkOrdenAsc(numOrd)) {
+            for (int i = numOrd.length - 1; i >= 0; i--) {
+                numOrd = returnIntercambiValMajorArray(numOrd, i);
+            }
+        }
+        return numOrd;
     }
 }

@@ -6,12 +6,13 @@ public class ExamenTest {
         System.out.println(e.minValue(numeros));
         System.out.println(e.returnIndMinValue(numeros));
         System.out.println(e.maxValue(numeros));
-        System.out.println(e.returnIndMaxValue(numeros, numeros.length));
+        System.out.println(e.returnIndMaxValue(numeros, numeros.length-1));
         System.out.println(e.checkOrdenAsc(numeros));
         System.out.println(e.checkOrdenDes(numeros));
         e.printArray(e.returnInversArray(numeros));
         System.out.println(e.reuturIndOcurr(numeros,5));
         System.out.println(e.returnProxNumbToAverage(numeros));
         e.printArray(e.returnIntercambiValMajorArray(numeros,7));
+        e.printArray(e.ordenarArray(numeros));
     }
 }
