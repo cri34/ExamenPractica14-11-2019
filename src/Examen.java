@@ -44,9 +44,9 @@ public class Examen {
     }
 
     //5
-    public int returnIndMaxValue(int[] numeros) {
+    public int returnIndMaxValue(int[] numeros, int indFinal) {
         int indMax = 0;
-        for (int i = 0; i < numeros.length; i++) {
+        for (int i = 0; i < indFinal; i++) {
             if (numeros[i] > numeros[indMax]) {
                 indMax = i;
             }
@@ -107,7 +107,7 @@ public class Examen {
     public int returnProxNumbToAverage(int[] numeros) {
         int avN = mitjaAritmetica(numeros);
         int indDifMin = 0;
-        int dif,difMin;
+        int dif, difMin;
         for (int i = 0; i < numeros.length; i++) {
             dif = avN - numeros[i];
             difMin = avN - numeros[indDifMin];
@@ -121,5 +121,19 @@ public class Examen {
                 break;
         }
         return numeros[indDifMin];
+    }
+
+    //11
+    public int[] returnIntercambiValMajorArray(int[] numeros, int ind) {
+        int[] intercambi = new int[numeros.length];
+        int indMax = returnIndMaxValue(numeros, ind);
+        int temp;
+        for (int i = 0; i < numeros.length; i++) {
+            intercambi[i] = numeros[i];
+        }
+        temp = intercambi[ind];
+        intercambi[ind] = intercambi[indMax];
+        intercambi[indMax] = temp;
+        return intercambi;
     }
 }
