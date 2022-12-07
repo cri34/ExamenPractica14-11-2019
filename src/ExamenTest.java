@@ -9,5 +9,6 @@ public class ExamenTest {
         System.out.println(e.returnIndMaxValue(numeros));
         System.out.println(e.checkOrdenAsc(numeros));
         System.out.println(e.checkOrdenDes(numeros));
+        e.printArray(e.returnInversArray(numeros));
     }
 }

@@ -69,6 +69,22 @@ public class Examen {
         }
         return true;
     }
+    //8
+    public int[] returnInversArray(int [] numeros){
+        int [] invers = new int[numeros.length];
+        int l = numeros.length -1;
+        for (int i = 0 ; i < numeros.length ; i++){
+            invers[i] = numeros [l - i];
+        }
+        return invers;
+    }
 
+    public void printArray ( int [] array){
+        for (int i = 0; i < array.length; i++){
+            System.out.print(" "+array[i]);
+        }
+        System.out.println();
+
+    }
 
 }
