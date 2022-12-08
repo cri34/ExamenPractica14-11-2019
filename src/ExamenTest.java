@@ -19,5 +19,7 @@ public class ExamenTest {
        System.out.println( e.checkValorsIndexParOrdenats(numeros));
        //ex9 model2
        System.out.println(e.returnIndLastOcurr(numeros,5));
+        //ex10 model2
+       System.out.println(e.returnNumeroLejanoMedia(numeros));
     }
 }

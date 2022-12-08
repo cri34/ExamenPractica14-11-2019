@@ -171,4 +171,23 @@ public class Examen {
         }
         return indLastOcur;
     }
+
+    //10 modelExamen2
+    public int returnNumeroLejanoMedia(int[] numeros) {
+        int media = mitjaAritmetica(numeros);
+        int indVLM = 0;
+        int difPosAct, difMax;
+        for (int i = 0; i < numeros.length; i++) {
+            difPosAct = numeros[i] - media;
+            difMax = numeros[indVLM] - media;
+            if (difPosAct < 0)
+                difPosAct = -difPosAct;
+            if (difMax < 0)
+                difMax = -difMax;
+            if (difPosAct > difMax) {
+                indVLM = i;
+            }
+        }
+        return numeros[indVLM];
+    }
 }
