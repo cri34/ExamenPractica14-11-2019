@@ -21,9 +21,9 @@ public class Examen {
     }
 
     //ex3
-    public int returnIndMinValue(int[] numeros) {
+    public int returnIndMinValue(int[] numeros, int index) {
         int indMin = 0;
-        for (int i = 0; i < numeros.length; i++) {
+        for (int i = index; i < numeros.length; i++) {
             if (numeros[i] < numeros[indMin]) {
                 indMin = i;
             }
@@ -189,5 +189,18 @@ public class Examen {
             }
         }
         return numeros[indVLM];
+    }
+
+    //11 model2
+    public int[] intercambiarMinVal(int[] numeros, int index) {
+        int[] inter = new int[numeros.length];
+        for (int i = 0; i < numeros.length; i++)
+            inter[i] = numeros[i];
+
+        int indMin = returnIndMinValue(numeros, index);
+        int temp = inter[index];
+        inter[index] = inter[indMin];
+        inter[indMin] = temp;
+        return inter;
     }
 }

@@ -4,7 +4,7 @@ public class ExamenTest {
         int [] numeros = {5 , 6 , 3 , 5 , 3 , 8 , 1 , 5};
         System.out.println(e.mitjaAritmetica(numeros));
         System.out.println(e.minValue(numeros));
-        System.out.println(e.returnIndMinValue(numeros));
+        System.out.println(e.returnIndMinValue(numeros,0));
         System.out.println(e.maxValue(numeros));
         System.out.println(e.returnIndMaxValue(numeros, numeros.length-1));
         System.out.println(e.checkOrdenAsc(numeros));
@@ -21,5 +21,7 @@ public class ExamenTest {
        System.out.println(e.returnIndLastOcurr(numeros,5));
         //ex10 model2
        System.out.println(e.returnNumeroLejanoMedia(numeros));
+       //ex11 model2
+        e.printArray(e.intercambiarMinVal(numeros,2));
     }
 }
