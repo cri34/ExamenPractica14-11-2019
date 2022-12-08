@@ -161,4 +161,14 @@ public class Examen {
         }
         return true;
     }
+
+    //9 modelExamen2
+    public int returnIndLastOcurr(int[] numeros, int ocurr) {
+        int indLastOcur = -1;
+        for (int i = 0; i < numeros.length; i++) {
+            if (numeros[i] == ocurr)
+                indLastOcur = i;
+        }
+        return indLastOcur;
+    }
 }

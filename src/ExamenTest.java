@@ -17,5 +17,7 @@ public class ExamenTest {
         //ex7 model2
         e.printArray(numeros);
        System.out.println( e.checkValorsIndexParOrdenats(numeros));
+       //ex9 model2
+       System.out.println(e.returnIndLastOcurr(numeros,5));
     }
 }
