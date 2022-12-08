@@ -14,5 +14,8 @@ public class ExamenTest {
         System.out.println(e.returnProxNumbToAverage(numeros));
         e.printArray(e.returnIntercambiValMajorArray(numeros,7));
         e.printArray(e.ordenarArray(numeros));
+        //ex7 model2
+        e.printArray(numeros);
+       System.out.println( e.checkValorsIndexParOrdenats(numeros));
     }
 }

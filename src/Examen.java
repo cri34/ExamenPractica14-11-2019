@@ -149,4 +149,16 @@ public class Examen {
         }
         return numOrd;
     }
+
+    //012345678
+    //7 modelExamen2
+    public boolean checkValorsIndexParOrdenats(int[] numeros) {
+        for (int i = 0; i < numeros.length - 2; i++) {
+            if (i % 2 != 0)
+                continue;
+            if (numeros[i] > numeros[i + 2])
+                return false;
+        }
+        return true;
+    }
 }
