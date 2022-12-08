@@ -22,7 +22,7 @@ public class Examen {
 
     //ex3
     public int returnIndMinValue(int[] numeros, int index) {
-        int indMin = 0;
+        int indMin = index;
         for (int i = index; i < numeros.length; i++) {
             if (numeros[i] < numeros[indMin]) {
                 indMin = i;
@@ -202,5 +202,16 @@ public class Examen {
         inter[index] = inter[indMin];
         inter[indMin] = temp;
         return inter;
+    }
+
+    //12 model2
+    public int[] ordenarArrayModel2(int[] numeros) {
+        int[] ord = new int[numeros.length];
+        for (int i = 0; i < numeros.length; i++)
+            ord[i] = numeros[i];
+        for (int i = 0; i < numeros.length; i++) {
+            ord = intercambiarMinVal(ord, i);
+        }
+        return ord;
     }
 }

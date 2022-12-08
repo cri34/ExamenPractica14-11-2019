@@ -22,6 +22,8 @@ public class ExamenTest {
         //ex10 model2
        System.out.println(e.returnNumeroLejanoMedia(numeros));
        //ex11 model2
-        e.printArray(e.intercambiarMinVal(numeros,2));
+        e.printArray(e.intercambiarMinVal(numeros,0));
+        //ex12 model2
+        e.printArray(e.ordenarArrayModel2(numeros));
     }
 }
